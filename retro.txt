@@ -19,6 +19,6 @@ O QUE DIFICULTOU O NOSSO APRENDIZADO ?
 	- quebrou cabeça com algumas besteiras da linguagem
 		( raise/rescue e '123'[2].chr() )
 	- começamos um pouco atrasado
-	- 
+	- fomos muito na superfície do problema e do TDD
 
 QUESTÕES
