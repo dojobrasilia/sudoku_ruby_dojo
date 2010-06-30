@@ -1,0 +1,24 @@
+30/07/2010
+
+	Bruno Pedroso
+	Fabrício Buzeto
+	Karina Macedo
+	Ricardo Funke
+	
+	Fizemos um ping pong. Começamos o problema do reconhecedor de sudoku.
+
+
+QUE APRENDEMOS ? 
+	- um pouco de ruby
+	- conceitos básicos de TDD
+	- ping pong é melhor que o relógio
+		- dá pra concluir a idéia
+		- não pressiona
+		
+O QUE DIFICULTOU O NOSSO APRENDIZADO ?
+	- quebrou cabeça com algumas besteiras da linguagem
+		( raise/rescue e '123'[2].chr() )
+	- começamos um pouco atrasado
+	- 
+
+QUESTÕES
