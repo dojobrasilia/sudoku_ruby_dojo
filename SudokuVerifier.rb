@@ -10,6 +10,8 @@ class SudokuVerifier
 		
 		if board[8].chr == '1'
 			return false 
+		elsif board[8+5].chr == '1'
+				return false 
 		end
 	
 		true
