@@ -12,28 +12,42 @@ class SudokuVerifier
 		end
 		
 		for i in 0..8 do
-			verify = []
-			for j in 0..8 do
-				if verify.include? index(i,j)
-					return false 
-				elsif
-					verify << index(i,j)
-				end
+			return false unless row_valid?(i)
+		end
+		
+		
+		return false unless col_valid? 0
+		return false unless col_valid? 2
+		
+		true
+		
+	end
+	
+	private 
+	
+	def index i, j
+   	@board[9*i+j].chr
+ 	end
+
+	def col_valid?(i)
+		if (index(1,i) == index(2, i))
+			return false
+		else	 		
+			!((index(2,i) == '8' and index(3, i) == '8')	or 
+			(index(3, i) == '1' and index(6, i) == '1'))
+		end
+	end
+
+	def row_valid?(i)
+		verify = []
+		for j in 0..8 do
+			if verify.include? index(i,j)
+				return false 
+			elsif
+				verify << index(i,j)
 			end
 		end
-		
-		if index(2,0) == '8' and index(3, 0) == '8'
-			return false
-		end
-		
-		if index(3, 2) == '1' and index(6, 2) == '1'
-			return false
-		end
-		true
 	end
-	private 
-		def index i, j
-    	@board[9*i+j].chr
-  	end
+
 end
 
