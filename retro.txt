@@ -22,3 +22,57 @@ O QUE DIFICULTOU O NOSSO APRENDIZADO ?
 	- fomos muito na superfície do problema e do TDD
 
 QUESTÕES
+
+
+========================================================================
+07/07/2010 - espanha ganhou!
+
+	Bruno Pedroso
+	Fabrício Buzeto
+	Bruno Rolim
+	Ricardo Funke
+	Rodrigo Ramalho
+	Danilo Vital
+	Haikal Rios
+	Raphael de Almeida (DojoRIO)
+	
+	
+	:-)
+		- Raphael e Danilo vieram
+		- commit durante o dojo
+		
+	:-(
+		- teclado do mac
+		- Karina e Julio não vieram
+		- rodou pouca gente no teclado
+			- cronometro + PingPong ? 
+	
+	QUE APRENDEMOS ? 
+		- ruby
+			- unless
+			- returns implícitos
+			- if não precisa de then
+			- array é uma collection 
+			- [].include?
+		- command@mac = ctrl@pc
+			
+	O QUE DIFICULTOU O NOSSO APRENDIZADO ?
+		- rodou pouca gente no teclado
+			- cronometro + PingPong ? 
+		- não foi fácil entender a sugestão do refactoring do bruno
+
+		- teste tá super repetitivo
+			- representar os casos como trocas no tabuleiro correto
+		- represenação string tá péssima
+
+	QUESTÕES
+		- Demos um passo grande demais?
+			- Difícil enxergar um passo pequeno
+		- fizemos testes só com o tabuleiro inteiro
+			- deveríamos ter feito testes mais simples
+			- pode voltar atrás com uma decisão
+				- apagar o teste e adaptar o código
+		
+		
+				
+		
