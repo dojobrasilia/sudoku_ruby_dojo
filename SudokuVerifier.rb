@@ -3,7 +3,7 @@ class InvalidBoard < RuntimeError
 end
 
 class SudokuVerifier 
-	def verify board
+	def has_errors board
 		
 		@board = board
 		
@@ -12,14 +12,14 @@ class SudokuVerifier
 		end
 		
 		for i in 0..8 do
-			return false unless row_valid?(i)
+			return true unless row_valid?(i)
 		end
 		
 		
-		return false unless col_valid? 0
-		return false unless col_valid? 2
+		return true unless col_valid? 0
+		return true unless col_valid? 2
 		
-		true
+		false
 		
 	end
 	

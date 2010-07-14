@@ -20,56 +20,33 @@ describe SudokuVerifier do
 	end
 
 	it 'should recognize repeated numbers on first row' do
-		
 		@board_matrix[0][8] = 1
-
-		answer = @v.verify(@board_matrix)
-		
-		answer.should_not be_nil
-		answer.should be_false
+		@v.has_errors(@board_matrix).should be_true
 	end
 	
 	it 'should recognize repeated numbers on second row' do
-		
 		@board_matrix[1][4] = 1
-		
-		answer = @v.verify(@board_matrix)
-		
-		answer.should_not be_nil
-		answer.should be_false
+		@v.has_errors(@board_matrix).should be_true
 	end
 	
 	it 'should recognize repeated numbers on first column' do
-
 		@board_matrix[2][0] = 8
 		@board_matrix[2][2] = 1
-
-		answer = @v.verify(@board_matrix)
-		
-		answer.should_not be_nil
-		answer.should be_false
+		@v.has_errors(@board_matrix).should be_true
 	end
 	
 	it 'should recognize repeated numbers on third column' do
-		
 		@board_matrix[3][2]=1
 		@board_matrix[3][5]=9
-		
-		answer = SudokuVerifier.new.verify(@board_matrix)
-		
-		answer.should_not be_nil
-		answer.should be_false
+		SudokuVerifier.new.has_errors(@board_matrix).should be_true
 	end
 	
 	it 'should reject an empty board' do
-		lambda{@v.verify ''}.should raise_error(InvalidBoard)
+		lambda{@v.has_errors ''}.should raise_error(InvalidBoard)
 	end	
 	
 	it 'should accept valid board' do
-	 answer = @v.verify(@board_matrix)
-	
-	  answer.should be_true
-		
+	 	@v.has_errors(@board_matrix).should be_false
   end
 
 end
