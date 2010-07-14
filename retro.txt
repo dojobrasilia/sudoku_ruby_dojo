@@ -76,8 +76,8 @@ QUESTÕES
 
 proximos passos:
 
-		- representação string tá péssima -- ok
-		- teste tá super repetitivo -- ok
+		√ - representação string tá péssima
+		√ - teste tá super repetitivo
 		- fizemos testes só com o tabuleiro inteiro
 			- verify vira has_errors
 		

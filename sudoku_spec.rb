@@ -21,7 +21,7 @@ describe SudokuVerifier do
 
 	it 'should recognize repeated numbers on first row' do
 		
-		@board_matrix[0,8] = 1
+		@board_matrix[0][8] = 1
 
 		answer = @v.verify(@board_matrix)
 		
@@ -31,7 +31,7 @@ describe SudokuVerifier do
 	
 	it 'should recognize repeated numbers on second row' do
 		
-		@board_matrix[1,4] = 1
+		@board_matrix[1][4] = 1
 		
 		answer = @v.verify(@board_matrix)
 		
@@ -41,8 +41,8 @@ describe SudokuVerifier do
 	
 	it 'should recognize repeated numbers on first column' do
 
-		@board_matrix[2,0] = 8
-		@board_matrix[2,2] = 1
+		@board_matrix[2][0] = 8
+		@board_matrix[2][2] = 1
 
 		answer = @v.verify(@board_matrix)
 		
@@ -52,8 +52,8 @@ describe SudokuVerifier do
 	
 	it 'should recognize repeated numbers on third column' do
 		
-		@board_matrix[3,2]=1
-		@board_matrix[3,5]=9
+		@board_matrix[3][2]=1
+		@board_matrix[3][5]=9
 		
 		answer = SudokuVerifier.new.verify(@board_matrix)
 		
