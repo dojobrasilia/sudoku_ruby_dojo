@@ -74,14 +74,38 @@ QUESTÕES
 				- apagar o teste e adaptar o código
 		
 
-proximos passos:
+========================================================================
+14/07/2010
+
+	Bruno Pedroso
+	Bruno Rolim
+	Fabrício Buzeto
+	Vinicius Botelho
+	
+	Hoje só refatoramos.
 
 		√ - representação string tá péssima
 		√ - teste tá super repetitivo
 		- fizemos testes só com o tabuleiro inteiro
-			- verify vira has_errors
+			√ - verify vira has_errors
+		- testar o row_valid e col_valid unitariamente
+			- mocar eles pra testar o has_error
+		- receber o board no construtor
 		
-
-
-				
+		
+		:-)
+			- o código ficou bem melhor
+			- fluiu pois só tinha macaco-véio
+			- Vini veio
+			
+		:-(
+			- pouca gente = menos idéias, menos diversidade
+			- retro foi miada
+			
+		QUE APRENDEMOS ? 		
+			- galera tá mais confortável com o teclado do mac			
+			
+		OUTRAS
+			
+			
 		
