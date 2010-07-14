@@ -25,26 +25,24 @@ class SudokuVerifier
 	
 	private 
 	
-	def index i, j
-   	@board[i][j]
- 	end
-
 	def col_valid?(i)
-		if (index(1,i) == index(2, i))
+		if (@board[1][i] == @board[2][i])
 			return false
 		else	 		
-			!((index(2,i) == '8' and index(3, i) == '8')	or 
-			(index(3, i) == '1' and index(6, i) == '1'))
+			!(
+				(@board[2][i] == '8' and @board[3][i] == '8')	or 
+				(@board[3][i] == '1' and @board[6][i] == '1')
+			)
 		end
 	end
 
 	def row_valid?(i)
 		verify = []
 		for j in 0..8 do
-			if verify.include? index(i,j)
+			if verify.include? @board[i][j]
 				return false 
 			elsif
-				verify << index(i,j)
+				verify << @board[i][j]
 			end
 		end
 	end
