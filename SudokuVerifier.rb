@@ -27,8 +27,8 @@ class SudokuVerifier
 	
 	def col_valid?(i)	 		
 		!(
-			(@board[2][i] == 8 and @board[3][i] == 8)	or 
-			(@board[3][i] == 1 and @board[6][i] == 1)
+			(@board[2][i] == @board[3][i])	or 
+			(@board[3][i] == @board[6][i])
 		 )
 	end
 
