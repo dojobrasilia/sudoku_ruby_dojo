@@ -73,6 +73,15 @@ QUESTÕES
 			- pode voltar atrás com uma decisão
 				- apagar o teste e adaptar o código
 		
+
+proximos passos:
+
+		- representação string tá péssima
+		- teste tá super repetitivo
+		- fizemos testes só com o tabuleiro inteiro
+			- verify vira has_errors
 		
+
+
 				
 		

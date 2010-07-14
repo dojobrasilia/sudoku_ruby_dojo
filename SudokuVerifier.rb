@@ -26,7 +26,7 @@ class SudokuVerifier
 	private 
 	
 	def index i, j
-   	@board[9*i+j].chr
+   	@board[i][j]
  	end
 
 	def col_valid?(i)
