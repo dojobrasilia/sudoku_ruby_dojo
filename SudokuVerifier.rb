@@ -25,15 +25,11 @@ class SudokuVerifier
 	
 	private 
 	
-	def col_valid?(i)
-		if (@board[1][i] == @board[2][i])
-			return false
-		else	 		
-			!(
-				(@board[2][i] == '8' and @board[3][i] == '8')	or 
-				(@board[3][i] == '1' and @board[6][i] == '1')
-			)
-		end
+	def col_valid?(i)	 		
+		!(
+			(@board[2][i] == '8' and @board[3][i] == '8')	or 
+			(@board[3][i] == '1' and @board[6][i] == '1')
+		 )
 	end
 
 	def row_valid?(i)
